@@ -6,13 +6,19 @@
 	<title>SODIS DEMO</title>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-	
+	<style>
+	model-viewer{
+		width:400px;
+		height:600px;
+		margin:0 auto;
+	}	
+		</style>
 
 </head>
 <body>
  
 
-<model-viewer src="assets/sodis.glb" alt="SODIS" ar-scale="auto" auto-rotate camera-controls ar ios-src="">
+<model-viewer src="assets/sodis.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="SODIS" auto-rotate camera-controls ios-src="">
 	
 </model-viewer>
 
